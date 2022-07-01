@@ -7,15 +7,17 @@ export const Container = styled.div(({ done }: ContainerProps) => (
 
     `display: flex;
     align-items: center;
+    justify-content: space-between ;
     background-color: var(--text-body);
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 10px;
     
+  
+
     input {
         width: 25px;
-        height: 25px;
-        
+        height: 25px;        
     
     }
     
@@ -23,10 +25,15 @@ export const Container = styled.div(({ done }: ContainerProps) => (
         margin-left: 10px;
         text-decoration: ${done ? 'line-through' : 'initial'};
     }
+
+  
+
     
     
         
     
     `
+
+
 
 ))
