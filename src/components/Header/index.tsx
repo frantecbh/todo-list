@@ -1,10 +1,16 @@
 import React from 'react'
-import { Title } from './style'
+import { Area, Container, Title } from './style'
 
 export function Header() {
     return (
-        <Title>
-            Lista de Tarefas
-        </Title>
+        <Container>
+
+            <Title>
+                Lista de Tarefas
+            </Title>
+
+
+        </Container>
+
     )
 }

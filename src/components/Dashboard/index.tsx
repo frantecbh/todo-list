@@ -9,7 +9,7 @@ import { Area, Container } from './style'
 export type ItemList = {
     id: number;
     name: string;
-    createdAt: Date;
+    createdAt: string;
     done: boolean;
 
 }
@@ -17,8 +17,8 @@ export type ItemList = {
 export function Dashboard() {
 
     const [list, setList] = useState<ItemList[]>([
-        { id: 1, name: 'Comprar o pao na padaria', createdAt: new Date, done: false },
-        { id: 2, name: 'Comprar bolo na padaria', createdAt: new Date, done: false }
+        { id: 1, name: 'Comprar o pao na padaria', createdAt: new Date().toString(), done: false },
+        { id: 2, name: 'Comprar bolo na padaria', createdAt: new Date().toString(), done: false }
     ])
 
 
@@ -28,7 +28,7 @@ export function Dashboard() {
         newList.push({
             id: list.length + 1,
             name: taskname,
-            createdAt: new Date,
+            createdAt: new Date().toString(),
             done: false
 
         })
@@ -41,8 +41,9 @@ export function Dashboard() {
     return (
 
         <Container>
+            <Header />
             <Area>
-                <Header />
+
                 <AddItem onSend={hadleAddTask} />
 
                 {

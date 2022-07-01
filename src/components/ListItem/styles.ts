@@ -10,10 +10,13 @@ export const Container = styled.div(({ done }: ContainerProps) => (
     justify-content: space-between ;
     background-color: var(--text-body);
     border-radius: 8px;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 10px;
     
-  
+    div{
+        display: flex;
+        align-items: center;
+    }
 
     input {
         width: 25px;

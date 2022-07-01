@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 
     margin: 20px 0;
-    border: 1px solid #444;
+    border: 1px solid #fff;
     padding: 10px;
     border-radius: 8px;
 
@@ -36,6 +36,10 @@ export const Container = styled.div`
 
         color: var(--shape)
     }
+
+    input::placeholder {
+  color: #fff;
+}
 
 
 `;
